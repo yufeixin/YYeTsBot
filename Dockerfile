@@ -20,6 +20,7 @@ COPY YYeTsFE/yarn.lock /YYeTsBot/YYeTsFE/
 RUN yarn
 COPY YYeTsFE /YYeTsBot/YYeTsFE/
 COPY .git /YYeTsBot/.git
+COPY .gitmodules /YYeTsBot/.gitmodules
 RUN yarn run release
 
 
